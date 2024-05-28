@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+}
+
+.sidebar{
+  margin-top: 25%
+}
+
+.sidebar-item{
+   width: 100%;
+   padding-top: 20px;
+  
+}
+
+.sidebar-link{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.top-icon{
+  font-size: 30px;
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+.sidebar-link.active{
+  background-color: rgb(5,121,121);
+  color: white;
+
+}
+
+/*
+.sidebar-link active{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  background-color: aquamarine;
+  color: blue;
+}
+*/
