@@ -32,7 +32,7 @@ const navigate = useNavigate();
   const handlesubmit = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:5000/contactms/update-contact/"+id, forminput, {
+      .put("https://ralphcontactms-api.vercel.app/contactms/update-contact/"+id, forminput, {
         headers: {
           Authorization: `Berear ${localStorage.getItem("token")}`,
         },
@@ -54,7 +54,7 @@ const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/contactms/contact/"+id, {
+      .get("https://ralphcontactms-api.vercel.app/contactms/contact/"+id, {
         headers: {
           Authorization: `Berear ${localStorage.getItem("token")}`,
         },

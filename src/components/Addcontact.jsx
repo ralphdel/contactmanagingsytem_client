@@ -31,7 +31,7 @@ const Addcontact = () => {
   const handlesubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/contactms/add-contact", forminput, {
+      .post("https://ralphcontactms-api.vercel.app/contactms/add-contact", forminput, {
         headers: {
           Authorization: `Berear ${localStorage.getItem("token")}`,
         },

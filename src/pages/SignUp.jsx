@@ -32,7 +32,7 @@ const SignUp = () => {
     setErrors(err);
     if (err.name === "" && err.email === "" && err.password === "") {
       axios
-        .post("http://localhost:5000/contactms/signup", forminput)
+        .post("https://ralphcontactms-api.vercel.app/contactms/signup", forminput)
         .then((res) => {
           if (res.data.success) {
             toast.success("Account created Successfully", {

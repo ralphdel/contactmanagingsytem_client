@@ -40,7 +40,7 @@ const Contacts = () => {
       if (result.isConfirmed) {
 
         axios
-        .delete(`http://localhost:5000/contactms/contact/${id}`, {
+        .delete(`https://ralphcontactms-api.vercel.app/contactms/contact/${id}`, {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`,
           },
@@ -96,7 +96,7 @@ const Contacts = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/contactms/contacts", {
+      .get("https://ralphcontactms-api.vercel.app/contactms/contacts", {
         headers: {
           Authorization: `Berear ${localStorage.getItem("token")}`,
         },
